@@ -19,7 +19,7 @@ A futuristic facial authentication portal built using **Next.js 15 (App Router)*
 
 ## 📁 Folder Structure
 
-`
+```
 ├── app/
 │ ├── login/ # Login page
 │ ├── register/ # Register page
@@ -43,7 +43,7 @@ A futuristic facial authentication portal built using **Next.js 15 (App Router)*
 ├── types/
 ├── .env.local # AWS credentials
 └── README.md
-`
+```
 
 
 ---
