@@ -19,7 +19,7 @@ A futuristic facial authentication portal built using **Next.js 15 (App Router)*
 
 ## 📁 Folder Structure
 
-.
+`
 ├── app/
 │ ├── login/ # Login page
 │ ├── register/ # Register page
@@ -43,7 +43,7 @@ A futuristic facial authentication portal built using **Next.js 15 (App Router)*
 ├── types/
 ├── .env.local # AWS credentials
 └── README.md
-
+`
 
 
 ---
@@ -66,7 +66,7 @@ A futuristic facial authentication portal built using **Next.js 15 (App Router)*
 
 ## 🔐 AWS Setup
 
-1. **S3 Bucket**: `visitors646`
+1. **S3 Bucket**: `your bucket name`
    - Enable public read (for demo)
    - Allow CORS if using preview
 
@@ -123,4 +123,40 @@ npm run dev
   - Lambda is triggered to search face in Rekognition
 
   - If match found → allow login
+
+## 📊 Project Configuration (YAML)
+```
+project:
+  name: CloudAuth
+  version: 1.0.0
+  description: >
+    Facial recognition login app using AWS Rekognition, S3, Lambda with a Next.js + Tailwind frontend.
+  author: Narayana
+
+tech_stack:
+  frontend:
+    - Next.js 15
+    - TailwindCSS 4
+    - Framer Motion
+    - React Webcam
+    - Lucide React Icons
+  backend:
+    - AWS Lambda
+    - AWS Rekognition
+    - AWS S3
+    - Formidable
+
+env:
+  AWS_ACCESS_KEY_ID: your-access-key
+  AWS_SECRET_ACCESS_KEY: your-secret-key
+  AWS_REGION: us-east-1
+  S3_BUCKET_NAME: your bucket name
+
+features:
+  - Facial Recognition Authentication
+  - Webcam & File Upload
+  - Animated Particle Backgrounds
+  - Dashboard + Insights Pages
+  - Profile Management
+```
 
